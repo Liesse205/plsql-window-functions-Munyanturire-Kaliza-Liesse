@@ -38,30 +38,30 @@ To even out short-term fluctuations and easily predict longer-term sales trends 
 
 After designing the ER Diagram, I’m going to use the Oracle SQL Developer which I connected to the Oracle Database Express Edition to create and populate tables with data, as those tables will be used to show the implementation of window functions.
 
-##	Creation of the tables to be populated with data
+	Creation of the tables to be populated with data
 
 Below are the queries used for creating the Customers, Products and Transactions Table. 
 
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/Table%20creation.png.png?raw=true)
 
-##	Populating the created tables with data 
-##1.	Customers Table
+	Populating the created tables with data 
+1.	Customers Table
 The table is made up of 6 deference values.
 
-![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/customers%20.png.png?raw=true)
+![tables]()
 
-##2.	Products Table
+2.	Products Table
 Contains 6 deference values
 
-![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/products.png.png?raw=true)
+![tables]()
 
-##3.	Transactions Table
+3.	Transactions Table
 The table below includes 8 deference values
 
-![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/Transactions%20table.png.png?raw=true)
+![tables]()
 
 
-##	Display of the created tables
+	Display of the created tables
    Customers Table
 
    
