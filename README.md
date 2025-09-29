@@ -138,6 +138,7 @@ Results
 Interpretation: This output (result) shows the relative standing of each transaction's revenue as a percentile from 0 to 1. The two transactions with revenue 290,000 both have a rank value of approximately 0.286, meaning they are better than 28.6% of the other transaction revenues in the dataset.
 
 2.	Aggregate
+   
 The functions in this category allow us to calculate a total, average or extreme value over a defined set of rows while still returning the detail rows.
 
 SUM ()
