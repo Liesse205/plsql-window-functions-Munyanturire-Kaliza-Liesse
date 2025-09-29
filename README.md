@@ -31,3 +31,13 @@ To even out short-term fluctuations and easily predict longer-term sales trends 
 ## Step 3: Database Schema
 
 ![table](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/Step%203%20table.png?raw=true)
+![diagram](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/er%20diagram.png.png?raw=true)
+
+•	One customer can make many transactions
+•	One product can appear in many sales (transactions).
+
+After designing the ER Diagram, I’m going to use the Oracle SQL Developer which I connected to the Oracle Database Express Edition to create and populate tables with data, as those tables will be used to show the implementation of window functions.
+
+##	Creation of the tables to be populated with data
+
+Below are the queries used for creating the Customers, Products and Transactions Table. 
