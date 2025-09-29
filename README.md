@@ -1,6 +1,8 @@
 # plsql-window-functions-Munyanturire-Kaliza-Liesse
 Names: Munyanturire Kaliza Liesse
+
 ID: 28410
+
 Database development with pl/sql Assignment
 ## Step 1: Problem Definition
 •	Business Context: A mid-sized commercial retailer company in the department of sales and marketing analytics in the consumer electronics and gadgets industry selling products like phones, laptops, headphones and smart watches across different regions in Rwanda.
@@ -26,6 +28,6 @@ To group customers into quartiles (top spenders, high spenders, medium spenders 
 5.	3-Month moving averages-AVG() OVER()
 To even out short-term fluctuations and easily predict longer-term sales trends of the moving average values compared with actual monthly sales which is essential for budget planning.
 
-Step 3: Database Schema
+## Step 3: Database Schema
 
 ![table](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/Step%203%20table.png?raw=true)
