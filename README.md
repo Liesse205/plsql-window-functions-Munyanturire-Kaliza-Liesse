@@ -41,3 +41,9 @@ After designing the ER Diagram, I’m going to use the Oracle SQL Developer whic
 ##	Creation of the tables to be populated with data
 
 Below are the queries used for creating the Customers, Products and Transactions Table. 
+
+![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/Table%20creation.png.png?raw=true)
+
+##	Populating the created tables with data 
+1.	Customers Table
+The table is made up of 6 deference values.
