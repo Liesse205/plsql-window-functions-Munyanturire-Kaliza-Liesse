@@ -53,4 +53,10 @@ The table is made up of 6 deference values.
 ##2.	Products Table
 Contains 6 deference values
 
+![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/products.png.png?raw=true)
+
+##3.	Transactions Table
+The table below includes 8 deference values
+
+
 
