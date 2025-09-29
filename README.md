@@ -58,5 +58,12 @@ Contains 6 deference values
 ##3.	Transactions Table
 The table below includes 8 deference values
 
+![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/Transactions%20table.png.png?raw=true)
+
+
+##	Display of the created tables
+   Customers Table
+
+   
 
 
