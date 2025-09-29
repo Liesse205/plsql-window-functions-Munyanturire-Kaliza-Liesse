@@ -118,9 +118,11 @@ DENSE_RANK ()
 This function is similar to RANK but without gaps after ties. The next rank after a tie will be applied to the data.
 
 Queries
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/dense%20rank.png.png?raw=true)
 
 Results
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/dense%20rank%20results.png.png?raw=true)
 
 Interpretation: The function above assigns the same rank (3) to the two transactions that share the same revenue (290,000), but it does not skip the next rank, assigning the next unique revenue value (400,000) the next consecutive rank of 4.
@@ -130,9 +132,11 @@ PERCENT_RANK ()
 This function calculates the relative rank of a row as a percentage. It ranges from 0 to 1. In the case below, PERCENT_RANK () shows us how close each customer’s revenue is compared to others’.
 
 Queries
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/percent%20rank.png.png?raw=true)
 
 Results
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/percent%20results.png.png?raw=true)
 
 Interpretation: This output (result) shows the relative standing of each transaction's revenue as a percentile from 0 to 1. The two transactions with revenue 290,000 both have a rank value of approximately 0.286, meaning they are better than 28.6% of the other transaction revenues in the dataset.
@@ -146,9 +150,11 @@ SUM ()
 Calculates the cumulative or running total across the frame. In the case below the function helps us track how much money was made overtime.
 
 Queries
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/running%20tota.png.png?raw=true)
 
 Results
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/running%20total%20results.png.png?raw=true)
 
 Interpretation: This running total shows the cumulative sales across all transactions as they occurred chronologically. By the last recorded transaction (2008), the business has accumulated a total revenue of 3,676,000, providing a simple measure of overall financial progress.
@@ -158,9 +164,11 @@ AVG ()
 Calculates the running average across the frame. Below it is used to measure the average purchase value as more sales occur.
 
 Queries
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/running%20avg.png.png?raw=true)
 
 Results
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/running%20avg%20results.png.png?raw=true)
 
 Interpretation: The running average is the average transaction revenue calculated up to and including the current row. This value tends to even out as more transactions are added; the final value (459,500) represents the overall average transaction value across the entire recorded history.
@@ -170,9 +178,11 @@ MIN ()
 Finds the minimum value within the defined frame. In the use case below the function is applied to identify the cheapest transaction so far compared to others.
 
 Queries
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/min%20so%20far.png.png?raw=true)
 
 Results
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/min%20so%20far%20results.png.png?raw=true)
 
 Interpretation: This column tracks the lowest revenue transaction encountered up to the current point in the sequence. The minimum quickly drops to 70,000 at transaction 2004 and remains there, indicating that no next transaction had a lower revenue value.
@@ -182,9 +192,11 @@ MAX ()
 Finds the maximum value within the defined frame. In the case below it identifies the largest sale so far at any point in the sequence.
 
 Queries
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/max%20so%20far.png.png?raw=true)
 
 Results
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/max%20so%20far%20results.png.png?raw=true)
 
 Interpretation: This calculation shows the highest revenue transaction seen so far as the transactions are processed sequentially. The maximum value increases whenever a transaction exceeds the previous highest amount, leading to the max being 1,050,000 at transaction 2006.
@@ -198,9 +210,11 @@ LAG ()
 Retrieves the value from the row that precedes the current row. In the case below the function lets us compare a current customer’s purchase with the one before it.
 
 Queries
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/previous%20revenue.png.png?raw=true)
 
 Results
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/previous%20revenue%20results.png.png?raw=true)
 
 Interpretation: This navigation function successfully pulls the revenue of the immediately preceding transaction into the current row. This is the crucial first step for period-to-period calculations like day-over-day or month-over-month sales growth.
@@ -210,9 +224,11 @@ LEAD ()
 Retrieves the value from the row that follows the current row. In this use case it allows us to compare today’s revenue to what the next customer spent.
 
 Queries
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/next%20revenue.png.png?raw=true)
 
 Results
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/next%20revenue%20results.png.png?raw=true)
 
 Interpretation: This function pulls the revenue of the immediately following transaction into the current row, allowing for comparison. For the final transaction (2008), the NEXT_REVENUE column is correctly null, as there is no subsequent sale.  
@@ -227,9 +243,11 @@ The function divides rows into a specified number of buckets (N) as equally as p
 
 
 Queries
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/quartile.png.png?raw=true)
 
 Results
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/quartile%20results.png.png?raw=true)
 
 Interpretation: The NTILE (4) function segments the transactions into four equal groups based on their revenue. Quartile 4 represents the highest revenue transactions (top 25%), while Quartile 1 contains the lowest revenue transactions (bottom 25%), providing a high-level view of revenue distribution.
@@ -239,9 +257,11 @@ CUME_DIST
 Calculates the cumulative distribution of a value within the ordered window. The result ranges from 0 to 1 and represents the fraction of rows that are less than or equal to the current row's value. The use case below specifies how the function tells us the proportion of customers who spent less than or equal to the given transaction.
 
 Queries
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/cume-dist.png.png?raw=true)
 
 Results
+
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/cume%20dist.results.png?raw=true)
 
 Interpretation: This column shows the fraction of transactions that have a revenue value less than or equal to the current row's revenue. For example, the two transactions with 290,000 revenue have a cumulative distribution of 0.5, meaning 50% of all transactions have revenue less than or equal to 290,000.
@@ -274,11 +294,11 @@ Interpretation: This column shows the fraction of transactions that have a reven
 
 •	Sales Forecasting: Utilize the LAG () function output (Previous Revenue) to calculate actual day-over-day growth rates. Establish growth targets that aim to decrease the frequency of low-value transactions (like 70,000), thereby improving the evened out Running Average.
 
-##Integrity statement
+## Integrity statement
 
 I declare that the work I have submitted is the result of my own effort, created with honesty and responsibility. I have acknowledged all sources used with accuracy and fairness. I commit to upholding the values of integrity, accountability, and respect for knowledge in this submission.
 
-References
+## References
 
 1.	Oracle. (n.d.). Analytic functions (SQL language reference). Oracle. Retrieved September 28, 2025, from https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Analytic-Functions.html
 
