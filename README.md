@@ -48,7 +48,7 @@ Below are the queries used for creating the Customers, Products and Transactions
 1.	Customers Table
 The table is made up of 6 deference values.
 
-![tables]()
+![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/Customers%20table.png.png?raw=true)
 
 2.	Products Table
 Contains 6 deference values
