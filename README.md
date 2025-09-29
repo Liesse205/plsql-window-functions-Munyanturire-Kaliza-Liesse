@@ -294,10 +294,6 @@ Interpretation: This column shows the fraction of transactions that have a reven
 
 •	Sales Forecasting: Utilize the LAG () function output (Previous Revenue) to calculate actual day-over-day growth rates. Establish growth targets that aim to decrease the frequency of low-value transactions (like 70,000), thereby improving the evened out Running Average.
 
-## Integrity statement
-
-I declare that the work I have submitted is the result of my own effort, created with honesty and responsibility. I have acknowledged all sources used with accuracy and fairness. I commit to upholding the values of integrity, accountability, and respect for knowledge in this submission.
-
 ## References
 
 1.	Oracle. (n.d.). Analytic functions (SQL language reference). Oracle. Retrieved September 28, 2025, from https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Analytic-Functions.html
@@ -322,6 +318,10 @@ I declare that the work I have submitted is the result of my own effort, created
 
 11.	Maniraguha, E. (2025). Database Development with PL/SQL - Lecture 01: Introduction to SQL Command Basics (Recap). AUCA.
 
+## Integrity statement
+
+“All sources were properly cited. Implementations and analysis represent original work. No AIgenerated
+content was copied without attribution or adaptation.”
 
 
 
