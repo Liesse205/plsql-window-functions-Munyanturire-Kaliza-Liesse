@@ -44,24 +44,29 @@ Below are the queries used for creating the Customers, Products and Transactions
 
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/Table%20creation.png.png?raw=true)
 
-	Populating the created tables with data 
+	Populating the created tables with data
+
 1.	Customers Table
+   
 The table is made up of 6 deference values.
 
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/Customers%20table.png.png?raw=true)
 
 2.	Products Table
+   
 Contains 6 deference values
 
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/Products%20table.png.png?raw=true)
 
 3.	Transactions Table
+   
 The table below includes 8 deference values
 
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/Transactions%20table.png.png?raw=true)
 
 
 	Display of the created tables
+
   Customers Table
 
 ![tables](https://github.com/Liesse205/plsql-window-functions-Munyanturire-Kaliza-Liesse/blob/main/customers%20.png.png?raw=true)  
